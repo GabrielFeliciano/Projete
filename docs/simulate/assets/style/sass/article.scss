@@ -1,0 +1,28 @@
+#simulation-article {
+    // background-color: rgba(0, 0, 0, 0.250);
+
+    box-sizing: border-box;
+    padding: .5rem 2%;
+
+    border-top-left-radius: 1rem;
+
+    // border-left: greenyellow solid 1rem;
+
+    p {
+        margin: 2rem 0;
+    }
+
+    h1, h2, h3, h6 {
+        font-weight: bold;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & > *:first-child {
+        margin: 0;
+    }
+}

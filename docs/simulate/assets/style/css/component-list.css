@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.component-list {
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.component-list li {
+  text-align: center;
+  font-weight: bold;
+  color: #6bff66;
+}
+
+.component-list li::before {
+  content: '🔌';
+}

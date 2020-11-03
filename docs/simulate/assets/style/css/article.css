@@ -1,0 +1,19 @@
+#simulation-article {
+  box-sizing: border-box;
+  padding: .5rem 2%;
+  border-top-left-radius: 1rem;
+}
+#simulation-article p {
+  margin: 2rem 0;
+}
+#simulation-article h1, #simulation-article h2, #simulation-article h3, #simulation-article h6 {
+  font-weight: bold;
+}
+#simulation-article h1, #simulation-article h2, #simulation-article h3, #simulation-article h4, #simulation-article h5, #simulation-article h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#simulation-article > *:first-child {
+  margin: 0;
+}

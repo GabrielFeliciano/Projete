@@ -1,0 +1,98 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+  background-color: #eaffe4;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 1rem, rgba(0, 0, 0, 0.05) 1rem, rgba(0, 0, 0, 0.05) 2rem), repeating-linear-gradient(-45deg, transparent, transparent 1rem, rgba(165, 0, 137, 0.1) 1rem, rgba(0, 0, 0, 0.05) 2rem), repeating-linear-gradient(90deg, transparent, transparent 1rem, rgba(16, 0, 165, 0.1) 1rem, rgba(0, 0, 0, 0.05) 2rem);
+  min-height: 100vh;
+}
+
+img.blind-man {
+  height: 2em;
+}
+
+main {
+  margin: 3rem 10%;
+}
+
+.component-list {
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.component-list li {
+  text-align: center;
+  font-weight: bold;
+  color: #6bff66;
+}
+
+.component-list li::before {
+  content: '🔌';
+}
+
+#simulation-article {
+  box-sizing: border-box;
+  padding: .5rem 2%;
+  border-top-left-radius: 1rem;
+}
+#simulation-article p {
+  margin: 2rem 0;
+}
+#simulation-article h1, #simulation-article h2, #simulation-article h3, #simulation-article h6 {
+  font-weight: bold;
+}
+#simulation-article h1, #simulation-article h2, #simulation-article h3, #simulation-article h4, #simulation-article h5, #simulation-article h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#simulation-article > *:first-child {
+  margin: 0;
+}
+
+.simulator__container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 20rem;
+  background-color: #f4f5f6;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.205);
+}
+.simulator__container .etefmc-icon {
+  width: 3em;
+  margin: 1rem 1rem;
+}
+.simulator__container .simulator {
+  width: 100%;
+  height: 100%;
+}
+.simulator__container .simulator.animation-finished {
+  top: 0;
+  left: 0;
+}
+.simulator__container .button-overlay {
+  transition: background-color .4s ease-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: darkolivegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(202, 202, 202, 0.7);
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+.simulator__container .button-overlay:hover {
+  background-color: rgba(136, 136, 136, 0.7);
+}

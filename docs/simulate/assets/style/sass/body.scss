@@ -1,0 +1,24 @@
+body {
+    overflow-x: hidden;
+    background-color: #eaffe4;
+    background-image: repeating-linear-gradient(
+        45deg, 
+        transparent, 
+        transparent 1rem,
+        rgba(0, 0, 0, 0.05) 1rem,
+        rgba(0, 0, 0, 0.05) 2rem
+    ), repeating-linear-gradient(
+        -45deg, 
+        transparent, 
+        transparent 1rem,
+        rgba(165, 0, 137, 0.1) 1rem,
+        rgba(0, 0, 0, 0.05) 2rem
+    ), repeating-linear-gradient(
+        90deg, 
+        transparent, 
+        transparent 1rem,
+        rgba(16, 0, 165, 0.1) 1rem,
+        rgba(0, 0, 0, 0.05) 2rem
+    );
+    min-height: 100vh;
+}
